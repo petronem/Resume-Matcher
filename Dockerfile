@@ -16,6 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY streamlit_app.py run_first.py ./
 COPY scripts/ scripts/
 COPY Data/ Data/
+COPY Assets/ Assets/
 
 # Create non-root user
 RUN useradd -m appuser
